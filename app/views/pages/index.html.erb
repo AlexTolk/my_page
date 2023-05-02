@@ -1,0 +1,89 @@
+<div id="selfintro">
+  <div id="photo"><%= image_tag "Me.png", height:420 %></div>
+  <div class="introtext"><h3>Hi there! My name is Alex Tolkachev,<br>
+  I'm a professional Web Developer🧑‍💻<br>
+  Welcome to my page!</h3></div>
+</div>
+
+<div class="container-rounded">
+  <div class="bigtitle">
+    <h1>3</h1> <h3>projects completed</h3>
+    </div>
+    <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <%= image_tag "img1.png", width: 1000 %>
+          <div class="text">Compas - find a travel partner</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <%= image_tag "img2.png", width: 1000 %>
+          <div class="text">Compas BnB - your next perfect stay</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <%= image_tag "img3.png", width: 1000 %>
+          <div class="text">Movierate - make customizable movie lists</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+
+  <div class="bigtitle">
+    <h1>5</h1> <h3>technologies mastered</h3>
+  </div>
+  <div class="stacklogos">
+    <%= image_tag "rails.png", height:130 %>
+    <%= image_tag "javascript.png", height:130 %>
+    <%= image_tag "HTML.png", height:130 %>
+    <%= image_tag "CSS.png", height:130 %>
+    <%= image_tag "vuejs.png", height:130 %>
+  </div>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
