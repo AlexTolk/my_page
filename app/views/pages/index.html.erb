@@ -1,8 +1,10 @@
 <div id="selfintro">
-  <div id="photo"><%= image_tag "Me.png", height:420 %></div>
-  <div class="introtext"><h3>Hi there! My name is Alex Tolkachev,<br>
-  I'm a professional Web Developer🧑‍💻<br>
-  Welcome to my page!</h3></div>
+  <div id="photo"><%= image_tag "Me.png"%></div>
+  <div class="introtext">
+    <h2>Hi! My name is Alex Tolkachev,</h2>
+    <h2>I make websites🧑‍💻</h2>
+    <h2>Welcome to my page!</h2>
+  </div>
 </div>
 
 <div class="container-rounded">
@@ -15,19 +17,19 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
-          <%= image_tag "img1.png", width: 1000 %>
+          <%= image_tag "img1.png"%>
           <div class="text">Compas - find a travel partner</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
-          <%= image_tag "img2.png", width: 1000 %>
+          <%= image_tag "img2.png"%>
           <div class="text">Compas BnB - your next perfect stay</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <%= image_tag "img3.png", width: 1000 %>
+          <%= image_tag "img3.png"%>
           <div class="text">Movierate - make customizable movie lists</div>
         </div>
 
@@ -43,17 +45,24 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
-
+  <div class="link">
+    <p><%= link_to "See all my projects", "/projects" %></p>
+  </div>
 
   <div class="bigtitle">
     <h1>5</h1> <h3>technologies mastered</h3>
   </div>
-  <div class="stacklogos">
-    <%= image_tag "rails.png", height:130 %>
-    <%= image_tag "javascript.png", height:130 %>
-    <%= image_tag "HTML.png", height:130 %>
-    <%= image_tag "CSS.png", height:130 %>
-    <%= image_tag "vuejs.png", height:130 %>
+  <div class="stack">
+    <div class="stacklogos">
+      <%= image_tag "rails.png", height:130 %>
+      <%= image_tag "javascript.png", height:130 %>
+      <%= image_tag "HTML.png", height:130 %>
+      <%= image_tag "CSS.png", height:130 %>
+      <%= image_tag "vuejs.png", height:130 %>
+    </div>
+    <div class="link">
+      <p><%= link_to "See how I do stuff", "/projects" %></p>
+    </div>
   </div>
 </div>
 

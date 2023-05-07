@@ -1,7 +1,8 @@
 @import "index";
 @import "navbar";
 @import "footer";
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Permanent+Marker&family=Roboto:wght@500&display=swap');
+@import "about";
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lato&family=Indie+Flower&family=Permanent+Marker&family=Roboto:wght@500&display=swap');
 @import "font-awesome";
 * {
   margin: 0%;
