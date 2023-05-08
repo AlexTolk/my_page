@@ -2,6 +2,8 @@
 @import "navbar";
 @import "footer";
 @import "about";
+@import "projects";
+@import "stack";
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lato&family=Indie+Flower&family=Permanent+Marker&family=Roboto:wght@500&display=swap');
 @import "font-awesome";
 * {
@@ -9,5 +11,5 @@
 }
 
 html {
-  background-color: #4119FD;
+  background-color: rgba(13,35,44,0.9);
 }

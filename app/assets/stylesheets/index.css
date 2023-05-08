@@ -15,7 +15,7 @@
   line-height: 8rem;
 }
 .introtext h2 {
-  border-right: .15em solid orange;
+  border-right: .15em solid #ffcc00;
   font-family: "Roboto";
   white-space: nowrap;
   overflow: hidden;
@@ -53,7 +53,7 @@
     width: 0;
   }
   99.9% {
-    border-right: .10em solid orange;
+    border-right: .10em solid #ffcc00;
   }
   100% {
     border: none;
@@ -65,7 +65,7 @@
     width: 0;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid #ffcc00;
   }
   100% {
     border: none;
@@ -80,7 +80,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid #ffcc00;
   }
   100% {
     opacity: 1;
@@ -96,7 +96,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid #ffcc00;
   }
   100% {
     opacity: 1;
@@ -227,7 +227,7 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: #ffcc00;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -267,8 +267,8 @@
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #0D232C;
-  mix-blend-mode: difference;
+  color: #ffcc00;
+  /* mix-blend-mode: difference; */
   font-size: 3rem;
   font-family: Lato;
   padding: 8px 12px;
